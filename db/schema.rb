@@ -16,9 +16,16 @@ ActiveRecord::Schema.define(version: 20180213195746) do
   enable_extension "plpgsql"
 
   create_table "characters", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "img_url"
+    t.bigint "house_id"
+    t.index ["house_id"], name: "index_characters_on_house_id"
   end
 
   create_table "houses", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "img_url"
   end
 
+  add_foreign_key "characters", "houses"
 end

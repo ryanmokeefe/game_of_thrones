@@ -1,4 +1,4 @@
-class Character < ApplicationController
+class CharactersController < ApplicationController
     
     def index
         @characters = Characters.all
