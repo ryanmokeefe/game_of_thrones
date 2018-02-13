@@ -6,8 +6,9 @@
     <div>
         <h2>
             Name: <%= char.name %>
-            House: <%= char.house %>
+            </br>
+            House: <%= char.house.name %>
         </h2>
-        <%= image_tag @char.img_url %>
+        <%= image_tag char.img_url %>
     </div>
 <% end %>

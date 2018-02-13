@@ -1,7 +1,7 @@
 class CharactersController < ApplicationController
     
     def index
-        @characters = Characters.all
+        @characters = Character.all
     end
 
     def show
