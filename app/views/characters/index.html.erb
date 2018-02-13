@@ -1,0 +1,13 @@
+<h1> All Characters </h1>
+<%= link_to "Add Character", new_character_path %>
+
+
+<% @characters.each do |char| %>
+    <div>
+        <h2>
+            Name: <%= char.name %>
+            House: <%= char.house %>
+        </h2>
+        <%= image_tag @char.img_url %>
+    </div>
+<% end %>

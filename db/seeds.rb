@@ -9,10 +9,10 @@
 Character.destroy_all
 House.destroy_all
 
-stark = House.create(name:"Stark", image_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Sta-Portal.png/revision/latest?cb=20160303110302")
-targaryen = House.create(name:"Targaryen", image_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/0/0a/Targ-Portal.png/revision/latest?cb=20160227211006")
-lannister = House.create(name:"Lannister", image_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/0/01/Lan-Portal.png/revision/latest?cb=20160303124241")
-greyjoy = House.create(name:"Greyjoy", image_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/e/e7/Gre-Portal.png/revision/latest?cb=20160303113824")
+stark = House.create(name:"Stark", img_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Sta-Portal.png/revision/latest?cb=20160303110302")
+targaryen = House.create(name:"Targaryen", img_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/0/0a/Targ-Portal.png/revision/latest?cb=20160227211006")
+lannister = House.create(name:"Lannister", img_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/0/01/Lan-Portal.png/revision/latest?cb=20160303124241")
+greyjoy = House.create(name:"Greyjoy", img_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/e/e7/Gre-Portal.png/revision/latest?cb=20160303113824")
 
 
 jon = Character.create(name: "Jon Snow", img_url:"https://vignette.wikia.nocookie.net/gameofthrones/images/2/25/Jon-Portal.png/revision/latest/scale-to-width-down/122?cb=20170814110246", house: stark)
