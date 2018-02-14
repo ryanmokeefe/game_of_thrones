@@ -1,0 +1,16 @@
+<h1> Edit <%= @house.name %> </h1>
+
+<%= form_for @house do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :img_url %>
+<%= f.text_field :img_url %>
+
+<%= f.submit "Update Info" %>
+
+<% end %>
+
+<%= form_for @house, method: :delete do |f| %>
+    <%= f.submit "Delete!", class: "delete" %>
+<% end %>

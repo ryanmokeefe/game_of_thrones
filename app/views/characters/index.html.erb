@@ -5,9 +5,9 @@
 <% @characters.each do |char| %>
     <div>
         <h2>
-            Name: <%= char.name %>
+            Name: <%= link_to char.name, char %>
             </br>
-            House: <%= char.house.name %>
+            House: <%= link_to char.house.name, char.house %>
         </h2>
         <%= image_tag char.img_url %>
     </div>

@@ -9,6 +9,7 @@ class CharactersController < ApplicationController
     end
 
     def new
+        @houses = House.all        
         @character = Character.new
     end
 
@@ -18,7 +19,8 @@ class CharactersController < ApplicationController
     end
 
     def edit
-      @character = Character.find(params[:id])
+        @houses = House.all                
+        @character = Character.find(params[:id])
     end
 
     def update
@@ -35,7 +37,7 @@ class CharactersController < ApplicationController
 
     private
     def char_params
-        params.require(:character).permit(:name, :img_url, :house)
+        params.require(:character).permit(:name, :img_url, :house_id)
     end
 
 end
